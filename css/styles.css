@@ -16,7 +16,7 @@
   --success: #22c55e;
   --purple: #a855f7;
   --purple-hover: #7c3aed;
-  --danger: #ef4444;
+  --danger: #71717a;
 }
 
 html { scroll-behavior: smooth; }
@@ -212,7 +212,7 @@ section.no-border { border-top: none; }
 
 /* Gradient backgrounds */
 .bg-gradient { background: linear-gradient(180deg, var(--bg) 0%, rgba(99,102,241,0.05) 50%, var(--bg) 100%); }
-.bg-gradient-red { background: linear-gradient(180deg, var(--bg) 0%, rgba(239,68,68,0.03) 50%, var(--bg) 100%); }
+.bg-gradient-red { background: linear-gradient(180deg, var(--bg) 0%, rgba(113,113,122,0.03) 50%, var(--bg) 100%); }
 
 /* ═══════════════════════════════════════════
    COMPARISON (Before/After)
