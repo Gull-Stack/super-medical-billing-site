@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIPAA Compliance & Security — Super Medical Billing</title>
+  <meta name="description" content="Detailed HIPAA compliance information for Super Medical Billing. AES-256 encryption, RBAC, audit logging, SOC 2 hosting, BAA, and breach notification procedures.">
+  <link rel="canonical" href="https://supermedicalbilling.com/compliance/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supermedicalbilling.com/compliance/">
+  <meta property="og:title" content="HIPAA Compliance & Security — Super Medical Billing">
+  <meta property="og:description" content="How Super Medical Billing protects PHI with enterprise-grade security controls.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header id="header" class="header--inner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">Super <span class="accent">Medical</span> Billing</a>
+      <nav>
+        <a href="/features/">Features</a>
+        <a href="/compliance/" class="active">Compliance</a>
+        <a href="/about/">About</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact/" class="btn btn-primary">Request Demo</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/features/" onclick="closeMobileMenu()">Features</a>
+  <a href="/compliance/" onclick="closeMobileMenu()">Compliance</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Request Demo</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-tag">Security & Compliance</div>
+    <h1>HIPAA-Compliant by Design</h1>
+    <p>Security isn't a feature we added. It's the foundation everything is built on. Here's exactly how we protect your data.</p>
+  </div>
+</div>
+
+<!-- Technical Safeguards -->
+<section class="no-border fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Technical Safeguards</div>
+      <h2 class="section-title">Encryption & Access Controls</h2>
+      <p class="section-sub">Enterprise-grade technical controls protecting PHI at every layer.</p>
+    </div>
+
+    <div class="card-grid fade-in-children">
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>AES-256-GCM Encryption at Rest</h3>
+        <p>All Protected Health Information — SSNs, patient demographics, insurance data — is encrypted using AES-256-GCM, the same standard used by the U.S. government for classified information.</p>
+        <ul>
+          <li>Database-level encryption for all PHI fields</li>
+          <li>Unique encryption keys per tenant</li>
+          <li>Automated key rotation</li>
+          <li>Encrypted database backups</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔐</div>
+        <h3>TLS 1.3 Encryption in Transit</h3>
+        <p>Every data transmission between clients, our servers, clearinghouses, and payers is protected with TLS 1.3 — the latest and most secure transport protocol.</p>
+        <ul>
+          <li>TLS 1.3 enforced on all endpoints</li>
+          <li>HSTS (HTTP Strict Transport Security)</li>
+          <li>Certificate pinning for API connections</li>
+          <li>No fallback to older TLS versions</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Role-Based Access Control (RBAC)</h3>
+        <p>Granular permission system ensuring staff see only what they need. JWT-based authentication with configurable session management.</p>
+        <ul>
+          <li>Configurable role definitions</li>
+          <li>Per-resource permission granularity</li>
+          <li>JWT token authentication</li>
+          <li>Automatic session timeout</li>
+          <li>Failed login attempt lockout</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audit Logging -->
+<section class="bg-gradient fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Accountability</div>
+      <h2 class="section-title">Complete Audit Trail</h2>
+      <p class="section-sub">Every action on every record, logged and searchable.</p>
+    </div>
+    <div class="card-grid-2">
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>What We Log</h3>
+        <p>Every data access, modification, and system event is captured with full context.</p>
+        <ul>
+          <li>User identity (who)</li>
+          <li>Action performed (what)</li>
+          <li>Timestamp (when)</li>
+          <li>IP address and device info (where)</li>
+          <li>Record affected (which patient/claim)</li>
+          <li>Before and after values (what changed)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔎</div>
+        <h3>Audit Capabilities</h3>
+        <p>Logs are searchable, exportable, and retained per HIPAA requirements.</p>
+        <ul>
+          <li>Searchable audit log interface</li>
+          <li>Filter by user, date, action type</li>
+          <li>Export for compliance reviews</li>
+          <li>6-year minimum retention (HIPAA)</li>
+          <li>Tamper-proof log storage</li>
+          <li>Automated suspicious activity alerts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infrastructure -->
+<section class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Infrastructure</div>
+      <h2 class="section-title">Secure Hosting & Infrastructure</h2>
+      <p class="section-sub">Built on SOC 2 compliant infrastructure with redundancy and disaster recovery.</p>
+    </div>
+    <div class="compliance-grid">
+      <div class="compliance-item">
+        <span class="c-icon">🏗️</span>
+        <div><h4>SOC 2 Compliant Hosting</h4><p>Application hosted on Railway with SOC 2 Type II certified infrastructure, including physical access controls and 24/7 monitoring.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">💾</span>
+        <div><h4>Automated Backups</h4><p>Daily encrypted backups with point-in-time recovery. Backups stored in geographically separate locations.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">🌐</span>
+        <div><h4>Network Security</h4><p>Web Application Firewall (WAF), DDoS protection, rate limiting, and IP allowlisting for API access.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">🔄</span>
+        <div><h4>Disaster Recovery</h4><p>Documented disaster recovery plan with defined RPO and RTO objectives. Regular DR testing and validation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Administrative Safeguards -->
+<section class="bg-gradient fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Administrative</div>
+      <h2 class="section-title">Administrative Safeguards</h2>
+      <p class="section-sub">Policies, procedures, and people protecting your data.</p>
+    </div>
+    <div class="compliance-grid">
+      <div class="compliance-item">
+        <span class="c-icon">👤</span>
+        <div><h4>Designated Security Officer</h4><p>A designated HIPAA Security Officer oversees all compliance activities, risk assessments, and incident response.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">📚</span>
+        <div><h4>Workforce Training</h4><p>All personnel with PHI access receive HIPAA training at onboarding and annually. Training is documented and tracked.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">🔍</span>
+        <div><h4>Risk Assessments</h4><p>Regular security risk assessments per 45 CFR § 164.308(a)(1). Findings are documented and remediated on a defined timeline.</p></div>
+      </div>
+      <div class="compliance-item">
+        <span class="c-icon">📋</span>
+        <div><h4>Policies & Procedures</h4><p>Comprehensive written policies covering access management, incident response, data handling, and workforce sanctions.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAA & Breach -->
+<section class="fade-in">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Agreements & Incidents</div>
+      <h2 class="section-title">BAA & Breach Notification</h2>
+    </div>
+    <div class="card-grid-2">
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>Business Associate Agreement</h3>
+        <p>We provide a standard BAA to every covered entity client. Our BAA covers all HIPAA-required provisions including:</p>
+        <ul>
+          <li>PHI use and disclosure limitations</li>
+          <li>Required safeguards</li>
+          <li>Breach notification obligations</li>
+          <li>Subcontractor requirements</li>
+          <li>Termination and data return provisions</li>
+        </ul>
+        <div style="margin-top: 20px;">
+          <a href="/baa/" class="btn btn-outline">View Standard BAA →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚨</div>
+        <h3>Breach Notification Procedures</h3>
+        <p>In the unlikely event of a breach of unsecured PHI, our response is swift and thorough:</p>
+        <ul>
+          <li>Covered entity notified within 24 hours</li>
+          <li>Identification of affected individuals</li>
+          <li>Description of information involved</li>
+          <li>Investigation and mitigation steps</li>
+          <li>Full cooperation with HHS reporting</li>
+          <li>Documented lessons learned & prevention</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="compliance-note" style="margin-top: 48px;">
+      <strong>Clearinghouse & Payer Partners:</strong> We maintain BAAs with all subcontractors who handle PHI, including Claim.MD (clearinghouse), Availity (eligibility), and Railway (hosting infrastructure). Our compliance documentation is available for review upon request.
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="fade-in">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Questions About Compliance?</h2>
+      <p>Our team is happy to walk through our security controls, provide compliance documentation, or discuss your specific requirements.</p>
+      <a href="/contact/" class="btn btn-purple btn-lg">Contact Us →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Super <span class="accent">Medical</span> Billing</div>
+        <p>A GullStack product. Modern medical billing for behavioral health practices.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/features/">Features</a><a href="/compliance/">Compliance</a><a href="/faq/">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/baa/">BAA</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 GullStack Trust. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

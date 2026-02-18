@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Super Medical Billing</title>
+  <meta name="description" content="Request a demo or get in touch with the Super Medical Billing team. HIPAA-compliant billing for behavioral health practices.">
+  <link rel="canonical" href="https://supermedicalbilling.com/contact/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supermedicalbilling.com/contact/">
+  <meta property="og:title" content="Contact — Super Medical Billing">
+  <meta property="og:description" content="Request a demo or ask a question about Super Medical Billing.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header id="header" class="header--inner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">Super <span class="accent">Medical</span> Billing</a>
+      <nav>
+        <a href="/features/">Features</a>
+        <a href="/compliance/">Compliance</a>
+        <a href="/about/">About</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact/" class="btn btn-primary active">Request Demo</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/features/" onclick="closeMobileMenu()">Features</a>
+  <a href="/compliance/" onclick="closeMobileMenu()">Compliance</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Request Demo</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-tag">Contact</div>
+    <h1>Let's Talk</h1>
+    <p>Request a demo, ask a question, or learn how Super Medical Billing fits your practice.</p>
+  </div>
+</div>
+
+<section class="no-border fade-in">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Form -->
+      <div>
+        <form id="contactForm">
+          <input type="hidden" id="formTimestamp" name="timestamp" value="">
+          <!-- Honeypot -->
+          <div class="hp-field">
+            <label for="hp_website">Website</label>
+            <input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry_type">Inquiry Type</label>
+            <select id="inquiry_type" name="inquiry_type" required>
+              <option value="">Select one...</option>
+              <option value="demo">Request a Demo</option>
+              <option value="general">General Inquiry</option>
+              <option value="compliance">Compliance Question</option>
+              <option value="pricing">Pricing Information</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Dr. Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@practice.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="practice">Practice Name</label>
+              <input type="text" id="practice" name="practice" placeholder="Your Practice Name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="(801) 555-1234">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="providers">Number of Providers</label>
+            <select id="providers" name="providers">
+              <option value="">Select...</option>
+              <option value="1">Solo practice (1)</option>
+              <option value="2-5">Small group (2-5)</option>
+              <option value="6-20">Medium group (6-20)</option>
+              <option value="20+">Large group (20+)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your practice and what you're looking for..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-purple btn-full">Send Message →</button>
+          <p class="form-note">We typically respond within 1 business day. Your information is kept confidential.</p>
+        </form>
+
+        <div id="formSuccess" class="form-success">
+          <div class="icon">✅</div>
+          <h3>Message Sent!</h3>
+          <p>We'll get back to you within 1 business day. Check your email for a confirmation.</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <div class="contact-info-card">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:josh@augmentadvertise.com">josh@augmentadvertise.com</a></p>
+        </div>
+        <div class="contact-info-card">
+          <h3>🏢 Organization</h3>
+          <p>GullStack Trust<br>Utah, United States</p>
+        </div>
+        <div class="contact-info-card">
+          <h3>⏱️ Response Time</h3>
+          <p>We typically respond within 1 business day. Demo requests are prioritized.</p>
+        </div>
+        <div class="contact-info-card">
+          <h3>🔒 Privacy</h3>
+          <p>Your information is kept confidential and is never shared. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Super <span class="accent">Medical</span> Billing</div>
+        <p>A GullStack product. Modern medical billing for behavioral health practices.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/features/">Features</a><a href="/compliance/">Compliance</a><a href="/faq/">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/baa/">BAA</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 GullStack Trust. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

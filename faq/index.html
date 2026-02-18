@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Super Medical Billing</title>
+  <meta name="description" content="Frequently asked questions about Super Medical Billing — HIPAA compliance, payer support, CPT codes, pricing, data migration, and more.">
+  <link rel="canonical" href="https://supermedicalbilling.com/faq/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supermedicalbilling.com/faq/">
+  <meta property="og:title" content="FAQ — Super Medical Billing">
+  <meta property="og:description" content="Answers to common questions about Super Medical Billing.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header id="header" class="header--inner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">Super <span class="accent">Medical</span> Billing</a>
+      <nav>
+        <a href="/features/">Features</a>
+        <a href="/compliance/">Compliance</a>
+        <a href="/about/">About</a>
+        <a href="/faq/" class="active">FAQ</a>
+        <a href="/contact/" class="btn btn-primary">Request Demo</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/features/" onclick="closeMobileMenu()">Features</a>
+  <a href="/compliance/" onclick="closeMobileMenu()">Compliance</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Request Demo</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-tag">FAQ</div>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about Super Medical Billing.</p>
+  </div>
+</div>
+
+<section class="no-border fade-in">
+  <div class="container">
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">What is Super Medical Billing? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Super Medical Billing is a modern, HIPAA-compliant medical billing platform built specifically for behavioral health practices. It handles the entire revenue cycle — claims submission (EDI 837P), real-time eligibility verification (270/271), electronic remittance advice (835), accounts receivable management, denial tracking & appeals, and provider credentialing — all in one unified system.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Is it HIPAA compliant? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes, completely. HIPAA compliance is built into every layer of the platform. We use AES-256-GCM encryption for all PHI at rest, TLS 1.3 for data in transit, role-based access controls with JWT authentication, and maintain complete audit logs of every data access and modification. Our infrastructure is hosted on SOC 2 compliant servers. We provide a standard Business Associate Agreement (BAA) to all clients. See our <a href="/compliance/" style="color:var(--purple);">Compliance page</a> for full details.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Which payers do you support? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>We support all major commercial payers including Aetna, BlueCross BlueShield, UnitedHealthcare, Cigna, Optum, Humana, Medicare, Medicaid, and more. Claims are submitted through integrated clearinghouse connections (Claim.MD) for maximum payer coverage. If a payer accepts electronic claims, we can submit to them.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How does clearinghouse integration work? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Super Medical Billing integrates directly with Claim.MD for claims submission and with Availity for real-time eligibility verification. Claims are generated in standard EDI 837P format and submitted electronically. Remittance advice (835/ERA) is imported automatically and matched to claims. You don't need a separate clearinghouse account — it's all built in.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What CPT codes are supported? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>All standard CPT codes are supported. For behavioral health, we come pre-loaded with common psychotherapy codes including 90834 (45-min individual), 90837 (60-min individual), 90847 (family therapy), 90832 (30-min individual), 90846 (family without patient), 90853 (group therapy), 90791 (diagnostic evaluation), and 96132 (neuropsych testing). You can add any additional CPT or HCPCS codes as needed.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can multiple providers use it? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes. Super Medical Billing supports multi-provider practices with separate NPIs, tax IDs, and credentialing records. Each provider can have their own fee schedules, and the role-based access system ensures staff only see what they need. It works for solo practitioners and group practices alike.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How much does it cost? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Pricing is tailored to your practice size and needs. We don't believe in per-claim charges that penalize growing practices. Contact us for a personalized quote — we'll walk you through pricing that makes sense for your situation. <a href="/contact/" style="color:var(--purple);">Request a demo →</a></p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you offer a BAA? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes. We provide a standard Business Associate Agreement (BAA) to every covered entity client before any PHI is exchanged. Our BAA covers all HIPAA-required provisions. You can <a href="/baa/" style="color:var(--purple);">review our standard BAA</a> or request a signed copy by contacting us.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What about data backups? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>We perform daily encrypted backups with point-in-time recovery capability. Backups are stored in geographically separate locations from the primary database. In the event of data loss, we can restore to any point within the retention window. All backups are encrypted with the same AES-256-GCM standard as the live database.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I migrate from my current system? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>We provide guided migration support. Depending on your current system, we can import patient demographics, provider information, fee schedules, and historical claim data. Our team walks you through the process step by step, and we run both systems in parallel during the transition to ensure nothing is missed.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Is training included? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Yes. Every new practice gets onboarding training for their team — administrators, billing staff, and providers. We also provide ongoing support and documentation. The platform is designed to be intuitive, but we make sure your team is confident before going live.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Does it integrate with our EHR/practice management system? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>Super Medical Billing integrates with SuperTool (GullStack's practice management platform) for scheduling, CRM, and patient management. For other EHR systems, we support standard data exchange formats. Contact us to discuss your specific integration needs.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What kind of support do you offer? <span class="icon">+</span></button>
+        <div class="faq-answer"><p>We provide email-based support with typical response times under 1 business day. For urgent billing issues (e.g., claim submission problems affecting revenue), we prioritize response. Our team understands behavioral health billing, so you're always talking to someone who knows your workflow.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="fade-in">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Still Have Questions?</h2>
+      <p>We're happy to answer anything not covered here. Reach out anytime.</p>
+      <a href="/contact/" class="btn btn-purple btn-lg">Contact Us →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Super <span class="accent">Medical</span> Billing</div>
+        <p>A GullStack product. Modern medical billing for behavioral health practices.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/features/">Features</a><a href="/compliance/">Compliance</a><a href="/faq/">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/baa/">BAA</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 GullStack Trust. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

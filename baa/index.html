@@ -5,65 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Associate Agreement — Super Medical Billing</title>
   <meta name="description" content="Standard HIPAA Business Associate Agreement (BAA) for Super Medical Billing by GullStack Trust.">
+  <link rel="canonical" href="https://supermedicalbilling.com/baa/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supermedicalbilling.com/baa/">
+  <meta property="og:title" content="Business Associate Agreement — Super Medical Billing">
+  <meta property="og:description" content="Standard HIPAA BAA for Super Medical Billing.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
-  <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --bg: #09090b; --bg-elevated: #18181b; --text: #fafafa; --text-muted: #a1a1aa;
-  --accent: #6366f1; --border: rgba(255,255,255,0.08);
-  --font-serif: 'Young Serif', Georgia, serif; --purple: #a855f7;
-}
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-a { color: var(--purple); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 0; background: rgba(9,9,11,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; max-width: 800px; margin: 0 auto; padding: 0 24px; }
-.logo { font-family: var(--font-serif); font-size: 1.4rem; color: var(--text); }
-.logo .accent { color: var(--purple); }
-.back { color: var(--text-muted); font-size: 0.9rem; }
-.content { padding: 120px 0 80px; }
-h1 { font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 8px; }
-.subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 48px; }
-h2 { font-family: var(--font-serif); font-size: 1.4rem; margin: 48px 0 16px; }
-p, li { color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
-ul, ol { padding-left: 24px; margin-bottom: 16px; }
-li { margin-bottom: 8px; }
-.doc-box { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 16px; padding: 40px; margin-bottom: 32px; }
-.print-btn {
-  display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;
-  background: var(--accent); color: white; border: none; border-radius: 8px;
-  font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; margin-bottom: 48px;
-}
-.print-btn:hover { background: #818cf8; transform: translateY(-1px); }
-footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
-.footer-copy { color: var(--text-muted); font-size: 0.8rem; }
-@media print {
-  header, .print-btn, footer { display: none; }
-  body { background: white; color: #111; }
-  .doc-box { background: white; border: 1px solid #ccc; }
-  p, li { color: #333; }
-  h1, h2 { color: #111; }
-  .content { padding-top: 0; }
-}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">Super <span class="accent">Medical</span> Billing</a>
-    <a href="/" class="back">← Back to Home</a>
+
+<header id="header" class="header--inner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">Super <span class="accent">Medical</span> Billing</a>
+      <nav>
+        <a href="/features/">Features</a>
+        <a href="/compliance/">Compliance</a>
+        <a href="/about/">About</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact/" class="btn btn-primary">Request Demo</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<div class="container">
-<div class="content">
+<div class="mobile-nav" id="mobileNav">
+  <a href="/" onclick="closeMobileMenu()">Home</a>
+  <a href="/features/" onclick="closeMobileMenu()">Features</a>
+  <a href="/compliance/" onclick="closeMobileMenu()">Compliance</a>
+  <a href="/about/" onclick="closeMobileMenu()">About</a>
+  <a href="/faq/" onclick="closeMobileMenu()">FAQ</a>
+  <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Request Demo</a>
+</div>
 
-<h1>Business Associate Agreement</h1>
-<p class="subtitle">Standard HIPAA Business Associate Agreement &nbsp;|&nbsp; To request a signed copy, contact <a href="mailto:josh@augmentadvertise.com">josh@augmentadvertise.com</a></p>
+<div class="page-hero">
+  <div class="container">
+    <div class="section-tag">Legal</div>
+    <h1>Business Associate Agreement</h1>
+    <p>Standard HIPAA BAA &nbsp;|&nbsp; To request a signed copy, contact <a href="mailto:josh@augmentadvertise.com" style="color:var(--purple);">josh@augmentadvertise.com</a></p>
+  </div>
+</div>
+
+<section class="no-border">
+  <div class="container--narrow">
+    <div class="legal-content">
 
 <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
 
@@ -166,13 +158,25 @@ Signature: ________________________________________</p>
 
 </div>
 
-</div>
-</div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="container">
-    <p class="footer-copy">© 2026 GullStack Trust. All rights reserved. Super Medical Billing is a product of GullStack Trust.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Super <span class="accent">Medical</span> Billing</div>
+        <p>A GullStack product. Modern medical billing for behavioral health practices.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/features/">Features</a><a href="/compliance/">Compliance</a><a href="/faq/">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/baa/">BAA</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 GullStack Trust. All rights reserved.</div>
   </div>
 </footer>
+
+<script src="/js/main.js"></script>
 </body>
 </html>
